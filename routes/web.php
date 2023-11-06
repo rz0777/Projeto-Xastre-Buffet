@@ -30,8 +30,11 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/supports', [SupportController::class, 'store'])->name('supports.store');
     Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
 });
-
+//Rotas de confirmação de presença
 Route::get('/confirmacao-presenca', 'ConfirmacaoPresencaController@index');
+Route::get('/confirmacao-presenca', 'ConfirmacaoPresencaController@index')->name('confirmacao-presenca');
+Route::post('/confirmacao-presenca', 'ConfirmacaoPresencaController@store');
+Route::get('/lista-de-convidados', 'ConfirmacaoPresencaController@listaConvidados')->name('lista-de-convidados');
 
 
 require __DIR__ . '/auth.php';
