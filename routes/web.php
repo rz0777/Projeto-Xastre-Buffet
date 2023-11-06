@@ -31,4 +31,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
 });
 
+Route::get('/confirmacao-presenca', 'ConfirmacaoPresencaController@index');
+
+
 require __DIR__ . '/auth.php';
