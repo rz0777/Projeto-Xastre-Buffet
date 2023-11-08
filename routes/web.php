@@ -3,9 +3,13 @@
 use App\Http\Controllers\Admin\{ReplySupportController, SupportController};
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Site\SiteController;
+use App\Http\Controllers\ConfirmacaoPresencaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/contato', [SiteController::class, 'contact']);
+
+
+Route::get('/teste', [ConfirmacaoPresencaController::class, 'index'])->name('teste');
 
 Route::get('/', [SiteController::class,'main']);
 
@@ -33,8 +37,10 @@ Route::middleware(['auth'])->group(function () {
 //Rotas de confirmação de presença
 Route::get('/confirmacao-presenca', 'ConfirmacaoPresencaController@index');
 Route::get('/confirmacao-presenca', 'ConfirmacaoPresencaController@index')->name('confirmacao-presenca');
-Route::post('/confirmacao-presenca', 'ConfirmacaoPresencaController@store');
+Route::post('/confirmacao-presenca', 'ConfirmacaoPresencaController@store')->name('confirmacao-presenca.store');
 Route::get('/lista-de-convidados', 'ConfirmacaoPresencaController@listaConvidados')->name('lista-de-convidados');
+// Remoção de convidados
+Route::delete('/remover-convidado/{id}', 'ConfirmacaoPresencaController@removerConvidado')->name('remover-convidado');
 
 
 require __DIR__ . '/auth.php';
