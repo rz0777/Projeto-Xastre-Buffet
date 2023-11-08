@@ -3,7 +3,6 @@
 use App\Http\Controllers\Admin\{ReplySupportController, SupportController};
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Site\SiteController;
-use App\Http\Controllers\ConfirmacaoPresencaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/contato', [SiteController::class, 'contact']);
