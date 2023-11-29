@@ -34,16 +34,17 @@
         <input type="date" name='data' required>
     </div>
 
+    <h2>Pacotes</h2>
     <!-- Adicione a imagem de comidas aqui -->
     <div class="form-group">
-        <label for="comidas_img">Imagem de Comidas</label>
-        <img src="https://img.freepik.com/fotos-gratis/arranjo-de-comida-deliciosa-de-alto-angulo_23-2149617130.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699142400&semt=ais" alt="Comidas" style="max-width: 100%;">
+        <label for="comidas_img"></label>
+        <img src="https://www.shutterstock.com/pt/image-photo/various-typical-brazilian-small-savory-snacks-796742380.jpg" alt="Pacote 1" style="max-width: 100%; height: auto;">
     </div>
 
     <!-- Adicione a imagem de bebidas aqui -->
     <div class="form-group">
-        <label for="bebidas_img">Imagem de Bebidas</label>
-        <img src="https://casaefesta.com/wp-content/uploads/2021/06/bebidas-para-servir-festa-infantil.jpg" alt="Bebidas" style="max-width: 100%;">
+        <label for="bebidas_img"></label>
+        <img src="https://www.shutterstock.com/pt/image-photo/chicken-fillet-rice-beans-manioc-flour-2020215452.jpg" alt="Pacote 2" style="max-width: 100%; height: auto;">
     </div>
 
     <button type="submit" class="btn-create-party">Criar festa</button>
