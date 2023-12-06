@@ -32,7 +32,7 @@
                     <a href="{{route('convidados.index')}}">Convidados</a>
                     <a href="{{route('aniversarios.create')}}">Fazer Solicitação</a>
                 <!-- Adicione o botão de Lista de Satisfação -->
-                <a href="{{route('satisfacao.lista')}}">Lista de Satisfação</a>
+                <a href="{{route('pesquisa.satisfacao')}}">Pesquisa de Satisfação</a>
                 @endif
             </div>
             <form method="POST" action="{{ route('logout') }}">

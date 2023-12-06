@@ -26,7 +26,10 @@ Route::get('/listadefestas', [ListaDeFestasController::class, 'index']);
 Route::delete('/admin/reserva/{reservaId}/cancelar', [AdminController::class, 'cancelarReserva']);
 
 //Rota da Pesquisa de Satisfação
-Route::get('/satisfacao/lista', [AniversarioController::class, 'lista'])->name('satisfacao.lista');
+Route::get('/pesquisa-satisfacao/{reservaId}', [SatisfacaoController::class, 'lista'])->name('pesquisa.satisfacao');
+
+
+
 
 Route::put('aniversarios/{aniversario}', 'AniversarioController@update')->name('aniversarios.update');
 Route::resource('aniversarios', AniversarioController::class);
@@ -75,7 +78,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/supports/create', [SupportController::class, 'create'])->name('supports.create');
     Route::post('/supports', [SupportController::class, 'store'])->name('supports.store');
     Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
-  
+    
 
 
 });

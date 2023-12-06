@@ -1,13 +1,15 @@
 <?php
 // app/Http/Controllers/SatisfacaoController.php
+// app/Http/Controllers/SatisfacaoController.php
 
 namespace App\Http\Controllers;
 
+use App\Models\Reserva; // Substitua pelo namespace real do seu modelo Reserva
 use Illuminate\Http\Request;
 
 class SatisfacaoController extends Controller
 {
-    public function lista()
+    public function lista($reservaId)
     {
         // Exemplo: Obtendo dados da reserva (ajuste conforme sua lógica)
         $reserva = Reserva::find(1); // Substitua 1 pelo ID da reserva que você deseja exibir
@@ -19,6 +21,7 @@ class SatisfacaoController extends Controller
         ];
 
         // Passando a variável $reserva para a view
-        return view('pesquisa_satisfacao', compact('dadosSatisfacao', 'reserva'));
+        return view('pesquisa.satisfacao', compact('dadosSatisfacao', 'reserva'));
+
     }
 }

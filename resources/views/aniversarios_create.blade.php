@@ -35,15 +35,17 @@
     </div>
 
     <!-- Adicione a imagem de comidas aqui -->
-    <div class="form-group">
-        <label for="comidas_img">Imagem de Comidas</label>
-        <img src="https://img.freepik.com/fotos-gratis/arranjo-de-comida-deliciosa-de-alto-angulo_23-2149617130.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699142400&semt=ais" alt="Comidas" style="max-width: 100%;">
+    <div class="form-group image-group">
+        <label for="comidas_img">Imagens do Pacote 1</label>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW6OvPmzzFsVGdFlZaGOIznTUgW0LVcrF_9Q&usqp=CAU" alt="Imagem de Comidas" class="package-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJak_2uxYNIC341iYKIuq0GxR6FtbFZKjz_Q&usqp=CAU" alt="Imagem de Comidas" class="package-image">
     </div>
 
     <!-- Adicione a imagem de bebidas aqui -->
-    <div class="form-group">
-        <label for="bebidas_img">Imagem de Bebidas</label>
-        <img src="https://casaefesta.com/wp-content/uploads/2021/06/bebidas-para-servir-festa-infantil.jpg" alt="Bebidas" style="max-width: 100%;">
+    <div class="form-group image-group">
+        <label for="bebidas_img">Imagens do Pacote 2</label>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6M_l3ETpH2vcUcrIFa-ENyHUs8280Xd2ydg&usqp=CAU" alt="Imagem de Bebidas" class="package-image bebidas_img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Qbs2yPdZCDVT364vR4gkBFD6C87i4jWBbaGf0jDuGG21kiLCkDGIwzgg8j3EnECM3wk&usqp=CAU" alt="Imagem de Bebidas" class="package-image bebidas_img">
     </div>
 
     <button type="submit" class="btn-create-party">Criar festa</button>
